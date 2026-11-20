@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  /* DESVÍO Brand Palette */
+  --color-desvio-black: #0B0B0B;
+  --color-desvio-white: #FFFFFF;
+  --color-desvio-red: #D9272E;
+  --color-desvio-blue: #0B52FF;
+  --color-desvio-concrete: #D8D5CE;
+
+  --background: #0B0B0B;
+  --foreground: #FFFFFF;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-desvio-black: #0B0B0B;
+  --color-desvio-white: #FFFFFF;
+  --color-desvio-red: #D9272E;
+  --color-desvio-blue: #0B52FF;
+  --color-desvio-concrete: #D8D5CE;
+  --font-headline: var(--font-oswald);
+  --font-body: var(--font-inter);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-oswald), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
